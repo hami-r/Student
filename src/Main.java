@@ -22,13 +22,13 @@ public class Main {
                 case 1:
                     System.out.println("Enter the details:");
                     System.out.print("Name: ");
-                    String name = scanner.nextLine();
+                    String name = scanner.next();
                     System.out.print("Admission Number: ");
-                    String admissionNumber = scanner.nextLine();
+                    long admissionNumber = scanner.nextLong();
                     System.out.print("Roll Number: ");
                     int rollNumber = scanner.nextInt();
                     System.out.print("College: ");
-                    String college = scanner.nextLine();
+                    String college = scanner.next();
                     Student student = new Student(name, admissionNumber, rollNumber, college);
                     studentList.add(student);
                     System.out.println("Student ADDED = " + studentList.size());
@@ -41,8 +41,8 @@ public class Main {
                     }
                     break;
                 case 3:
-                    System.out.println("Enter the admission number:");
-                    admissionNumber = scanner.nextLine();
+                    System.out.println("Enter the admission number to search:");
+                    admissionNumber = scanner.nextLong();
                     boolean isFound = false;
                     int found = 0;
                     for(int i = 0; i < studentList.size(); i++) {
@@ -61,8 +61,8 @@ public class Main {
                     }
                     break;
                 case 4:
-                    System.out.println("Enter the employee ID to be deleted");
-                    admissionNumber = scanner.nextLine();
+                    System.out.println("Enter the admission number to be deleted");
+                    admissionNumber = scanner.nextLong();
                     for(int i = 0; i < studentList.size(); i++) {
                         if(studentList.get(i).admissionNumber == admissionNumber) {
                             studentList.remove(i);

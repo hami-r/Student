@@ -1,10 +1,10 @@
 public class Student {
     String name;
-    String admissionNumber;
+    long admissionNumber;
     int rollNumber;
     String college;
 
-    public Student(String name, String admissionNumber, int rollNumber, String college) {
+    public Student(String name, long admissionNumber, int rollNumber, String college) {
         this.name = name;
         this.admissionNumber = admissionNumber;
         this.rollNumber = rollNumber;
