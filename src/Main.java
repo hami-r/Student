@@ -31,6 +31,7 @@ public class Main {
                     String college = scanner.nextLine();
                     Student student = new Student(name, admissionNumber, rollNumber, college);
                     studentList.add(student);
+                    System.out.println("Student ADDED = " + studentList.size());
                     break;
             }
 
