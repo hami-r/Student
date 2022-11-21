@@ -60,6 +60,25 @@ public class Main {
                         System.out.println("Student not found");
                     }
                     break;
+                case 4:
+                    System.out.println("Enter the employee ID to be deleted");
+                    admissionNumber = scanner.nextLine();
+                    for(int i = 0; i < studentList.size(); i++) {
+                        if(studentList.get(i).admissionNumber == admissionNumber) {
+                            studentList.remove(i);
+                            System.out.println("Student is deleted!\n" +
+                                    "Current number of students = " + studentList.size());
+                            break;
+                        }
+                    }
+                    break;
+                case 5:
+                    System.out.println("Exiting");
+                    isContinue = false;
+                    break;
+                default:
+                    System.out.println("Enter a valid option!");
+                    break;
 
             }
 
