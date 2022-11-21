@@ -33,6 +33,14 @@ public class Main {
                     studentList.add(student);
                     System.out.println("Student ADDED = " + studentList.size());
                     break;
+                case 2:
+                    System.out.println("Number of Students: " + studentList.size());
+                    for (int i = 0; i < studentList.size(); i++) {
+                        System.out.println((i+1) + ")");
+                        studentList.get(i).display();
+                    }
+                    break;
+
             }
 
         }
