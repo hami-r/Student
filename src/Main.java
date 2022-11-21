@@ -40,6 +40,26 @@ public class Main {
                         studentList.get(i).display();
                     }
                     break;
+                case 3:
+                    System.out.println("Enter the admission number:");
+                    admissionNumber = scanner.nextLine();
+                    boolean isFound = false;
+                    int found = 0;
+                    for(int i = 0; i < studentList.size(); i++) {
+                        if(studentList.get(i).admissionNumber == admissionNumber) {
+                            isFound = true;
+                            found = i;
+                            break;
+                        }
+                    }
+                    if(isFound){
+                        System.out.println("Student founded!!");
+                        studentList.get(found).display();
+                    }
+                    else {
+                        System.out.println("Student not found");
+                    }
+                    break;
 
             }
 
